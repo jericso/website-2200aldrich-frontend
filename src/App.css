@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+/*
+Source - https://stackoverflow.com/a/32875781
+Posted by Platte Gruber, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-06, License - CC BY-SA 4.0
+*/
+.img-rotate {
+    transform: rotate(90deg);
+}
+
