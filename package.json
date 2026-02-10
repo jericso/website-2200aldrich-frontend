@@ -1,13 +1,18 @@
 {
-  "name": "website-2200aldrich-frontend",
+  "name": "2200aldrich.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:ui": "rm -rf dist && npm run build",
+    "deploy-local": "rm -rf /var/www/localhost/html/* && cp -r dist/* /var/www/localhost/html",
+    "deploy-dev": "ssh jericso@dev.prolegoma.com \"rm -rf /var/www/dev.2200aldrich.com/html/*\" && scp -r dist/* jericso@dev.prolegoma.com:/var/www/dev.2200aldrich.com/html",
+    "deploy-local:full": "npm run build:ui && npm run deploy-local",
+    "deploy-dev:full": "npm run build:ui && npm run deploy-dev"
   },
   "dependencies": {
     "react": "^19.2.0",
