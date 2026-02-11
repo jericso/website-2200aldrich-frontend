@@ -4,8 +4,8 @@ import './App.css';
 function App() {
   return (
     <div class="app-main">
-      <h1>2200 Aldrich</h1>
-      <br />
+      <h1>2200 Aldrich Avenue South</h1>
+      <h2>Minneapolis, Minnesota</h2>
       <table>
         <tr>
           <td>
