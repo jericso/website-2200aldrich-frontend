@@ -41,12 +41,27 @@
   color: #888;
 }
 
-/*
-Source - https://stackoverflow.com/a/32875781
-Posted by Platte Gruber, modified by community. See post 'Timeline' for change history
-Retrieved 2026-02-06, License - CC BY-SA 4.0
-*/
-.img-rotate {
-    transform: rotate(90deg);
+figure {
+  position: relative;
+  margin: 0; /* Optional: Resets default margin for cleaner layout */
+  padding: 6px;
+  border: 1px solid rgb(44, 42, 42); /* To visualize the figure's boundaries */
+  width: 640px;
+  height: 480x;
+  transform: rotate(90deg);
 }
 
+figcaption {
+  position: absolute;
+  top: 0;
+  right: 1;
+  width: 480px;
+  height: 640px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 22px;
+  font-style:italic;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
