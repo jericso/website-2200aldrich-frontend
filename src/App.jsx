@@ -3,11 +3,27 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <Camera
-        srcValue={'https://rtsp.me/embed/fbR65NiA/'}
-        title={'Camera 0 - Looking South'}
-      />
+    <div class="app-main">
+      <h1>2200 Aldrich</h1>
+      <br></br>
+      <br></br>
+      <br></br>
+      <table>
+        <tr>
+          <td>
+            <Camera
+              srcValue={'https://rtsp.me/embed/fbR65NiA/'}
+              title={'Camera 1 - Looking South'}
+            />
+          </td>
+          <td>
+            <Camera
+              srcValue={'https://rtsp.me/embed/fbR65NiA/'}
+              title={'Camera 2 - Looking North'}
+            />
+          </td>
+        </tr>
+      </table>
     </div>
   );
 }
