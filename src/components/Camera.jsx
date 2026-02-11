@@ -18,7 +18,11 @@ const Camera = ({ srcValue, title }) => (
           player{' '}
         </iframe>
       </div>
-      <figcaption>{title}</figcaption>
+      <figcaption>
+        {title}
+        <br />
+        Direct feed: <a href={srcValue}>{srcValue}</a>
+      </figcaption>
     </figure>
   </div>
 );

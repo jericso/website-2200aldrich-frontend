@@ -5,9 +5,7 @@ function App() {
   return (
     <div class="app-main">
       <h1>2200 Aldrich</h1>
-      <br></br>
-      <br></br>
-      <br></br>
+      <br />
       <table>
         <tr>
           <td>

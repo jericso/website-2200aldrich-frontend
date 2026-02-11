@@ -5,15 +5,19 @@ h1 {
 }
 
 .app-main {
-  padding: 35px;
+  padding: 30px;
 }
 
 .camera-container {
   position: relative;
+  width: 480px;
+  height: 650px;
 }
 
 .camera-container iframe {
   position: relative;
+  transform: translate(-80px, 80px) rotate(90deg);
+  transform-origin: center;
 }
 
 .camera-figure {
@@ -21,8 +25,6 @@ h1 {
   border-style: solid;
   padding: 10px;
   height: fit-content;
-  transform: rotate(90deg);
-  transform-origin: center;
 }
 
 .camera-figure figcaption {
