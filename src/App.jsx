@@ -4,12 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Camera from './components/Camera';
+import AboutDialog from './components/AboutDialog';
 import RequestOffcanvas from './components/RequestOffcanvas';
 import './App.css';
 
 function App() {
   const [showRequest, setShowRequest] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
 
+  const handleCloseAbout = () => setShowAbout(false);
+  const handleShowAbout = () => setShowAbout(true);
   const handleCloseRequest = () => setShowRequest(false);
   const handleShowRequest = () => setShowRequest(true);
 
@@ -32,6 +36,10 @@ function App() {
             <h3>Minneapolis, Minnesota</h3>
           </Col>
           <Col>
+            <Button variant="dark" onClick={handleShowAbout}>
+              About
+            </Button>
+            &nbsp;&nbsp;
             <Button variant="dark" onClick={handleShowRequest}>
               Request video
             </Button>
@@ -57,6 +65,7 @@ function App() {
           <Col></Col>
         </Row>
       </Container>
+      <AboutDialog showAbout={showAbout} onClose={() => handleCloseAbout()} />
       <RequestOffcanvas
         showRequest={showRequest}
         onClose={() => handleCloseRequest()}

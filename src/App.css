@@ -1,18 +1,12 @@
 h1 {
-  vertical-align: top;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 2em;
 }
 
 h2 {
-  vertical-align: top;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
 }
 
 h3 {
-  vertical-align: top;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 0em;
 }
 
@@ -40,19 +34,16 @@ h3 {
 }
 
 .camera-figure figcaption {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
   vertical-align: top;
 }
 
 .copyright-footer {
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   font-size: 0.8em;
   padding: 15px;
 }
 
 ._2200aldrich-offcanvas {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 1em;
 }
