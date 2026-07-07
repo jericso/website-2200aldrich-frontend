@@ -51,18 +51,10 @@ function App() {
         <Row>
           <Col>
             <Camera
-              srcValue={'https://rtsp.me/embed/fbR65NiA/'}
-              title={'Camera 1 - Looking South'}
+              srcValue={'http://localhost:8889/proxied/'}
+              title={'Camera 1 - Looking North'}
             />
           </Col>
-          <Col></Col>
-          <Col>
-            <Camera
-              srcValue={'https://rtsp.me/embed/fbR65NiA/'}
-              title={'Camera 2 - Looking North'}
-            />
-          </Col>
-          <Col></Col>
         </Row>
       </Container>
       <AboutDialog showAbout={showAbout} onClose={() => handleCloseAbout()} />

@@ -16,20 +16,19 @@ h3 {
 
 .camera-container {
   position: relative;
-  width: 480px;
-  height: 650px;
+  width: 640px;
+  height: 480px;
 }
 
 .camera-container iframe {
   position: relative;
-  transform: translate(-80px, 80px) rotate(90deg);
-  transform-origin: center;
 }
 
 .camera-figure {
   border: 1px;
   border-style: solid;
   padding: 10px;
+  width: 660px;
   height: fit-content;
 }
 
