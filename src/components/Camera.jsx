@@ -7,15 +7,10 @@ const Camera = ({ srcValue, title }) => (
           height="480"
           src={srcValue}
           frameborder="0"
-          title="RTSP Stream Player"
+          title={title}
           allowfullscreen
         >
-          Iframes not supported. Broadcasting{' '}
-          <a href="https://rtsp.me/" title="rtsp video steaming service">
-            {' '}
-            rtsp.me
-          </a>{' '}
-          player{' '}
+          Iframes not supported.
         </iframe>
       </div>
       <figcaption>

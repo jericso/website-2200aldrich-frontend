@@ -51,7 +51,7 @@ function App() {
         <Row>
           <Col>
             <Camera
-              srcValue={'http://localhost:8889/proxied/'}
+              srcValue={'https://streams.2200aldrich.com/aldrich-north/'}
               title={'Camera 1 - Looking North'}
             />
           </Col>
