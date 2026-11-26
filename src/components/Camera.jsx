@@ -1,14 +1,15 @@
 const Camera = ({ srcValue, title }) => (
   <div>
-    <figure class="camera-figure">
-      <div class="camera-container">
+    <figure className="camera-figure">
+      <div className="camera-container">
         <iframe
-          width="640"
-          height="480"
           src={srcValue}
-          frameborder="0"
           title={title}
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
+          sandbox="allow-scripts allow-same-origin"
+          referrerPolicy="no-referrer"
+          loading="lazy"
         >
           Iframes not supported.
         </iframe>
@@ -16,7 +17,10 @@ const Camera = ({ srcValue, title }) => (
       <figcaption>
         {title}
         <br />
-        Direct feed: <a href={srcValue}>{srcValue}</a>
+        Direct feed:{' '}
+        <a href={srcValue} target="_blank" rel="noopener noreferrer">
+          {srcValue}
+        </a>
       </figcaption>
     </figure>
   </div>

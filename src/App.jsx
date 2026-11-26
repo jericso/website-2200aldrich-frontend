@@ -17,14 +17,14 @@ function App() {
   const handleCloseRequest = () => setShowRequest(false);
   const handleShowRequest = () => setShowRequest(true);
 
-  let copyright = (
+  const copyright = (
     <footer className="copyright-footer">
       &copy; Copyright {new Date().getFullYear()} 2200aldrich.com
     </footer>
   );
 
   return (
-    <div class="app-main">
+    <div className="app-main">
       <Container>
         <Row>
           <Col>
@@ -57,10 +57,10 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <AboutDialog showAbout={showAbout} onClose={() => handleCloseAbout()} />
+      <AboutDialog showAbout={showAbout} onClose={handleCloseAbout} />
       <RequestOffcanvas
         showRequest={showRequest}
-        onClose={() => handleCloseRequest()}
+        onClose={handleCloseRequest}
       />
       {copyright}
     </div>
