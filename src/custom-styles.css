@@ -1,3 +1,24 @@
 :root {
   --bs-body-font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+  /* Matches the image's edges so the side margins blend in */
+  background-color: #ebebeb;
+  background-image: url('./assets/background.jpg');
+  /* Partial zoom: image is 130% of window height, so most of it shows
+     with narrower side margins (filled by background-color) */
+  background-size: auto 130%;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* On portrait screens, fill the window instead; the signs stay in view */
+@media (orientation: portrait) {
+  body {
+    background-size: cover;
+    background-position: center top;
+  }
+}
