@@ -11,9 +11,10 @@ const AboutDialog = ({ showAbout, onClose }) => {
       </Modal.Header>
       <Modal.Body>
         <p>
-          Our cameras capture the 2200 block of Aldrich Avenue South in
-          Minneapolis, Minnesota. The cameras are active from 7:00 am until 6:00 pm Central
-          Time, 7 days a week. Camera footage is stored for 14 days to cloud storage.
+          Our camera captures the West 22nd Street and South Aldrich Avenue
+          intersection in Minneapolis, Minnesota. The cameras are active from
+          morning until night, 7 days a week. Camera footage is stored for 14
+          days to cloud storage.
         </p>
         <p>
           If you would like video from the last 14 days, please submit a request
