@@ -54,3 +54,25 @@ h3 {
 ._2200aldrich-offcanvas {
   font-size: 1em;
 }
+
+/* Phones: tighter spacing and a smaller title */
+@media (max-width: 575.98px) {
+  /* Scoped with .app-main so these win over Bootstrap's heading styles,
+     which load later, and leave the About dialog's title unaffected */
+  .app-main h1,
+  .app-main h3 {
+    font-weight: 700;
+  }
+
+  .app-main {
+    padding: 6px;
+  }
+
+  .camera-figure {
+    padding: 6px;
+  }
+
+  .camera-figure figcaption {
+    font-size: 0.9em;
+  }
+}

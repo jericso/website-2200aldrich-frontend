@@ -28,25 +28,34 @@ function App() {
       <Container>
         <Row>
           <Col>
-            <h1>2200 Aldrich Avenue South</h1>
+            <h1>
+              {/* Abbreviated on phones so the title fits on one line */}
+              <span className="d-none d-sm-inline">2200 Aldrich Avenue South</span>
+              <span className="d-sm-none">2200 Aldrich Ave S</span>
+            </h1>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <h3>Minneapolis, Minnesota</h3>
+        <Row className="align-items-center gy-2 mb-3">
+          <Col xs={12}>
+            <h3 className="mb-0">Minneapolis, Minnesota</h3>
           </Col>
-          <Col>
-            <Button variant="dark" onClick={handleShowAbout}>
+          <Col xs={12} className="d-flex gap-2">
+            {/* Buttons share the full width on phones, natural width on larger screens */}
+            <Button
+              variant="dark"
+              className="flex-fill flex-md-grow-0"
+              onClick={handleShowAbout}
+            >
               About
             </Button>
-            &nbsp;&nbsp;
-            <Button variant="dark" onClick={handleShowRequest}>
+            <Button
+              variant="dark"
+              className="flex-fill flex-md-grow-0"
+              onClick={handleShowRequest}
+            >
               Request video
             </Button>
           </Col>
-        </Row>
-        <Row>
-          <Col>&nbsp;</Col>
         </Row>
         <Row>
           <Col>
