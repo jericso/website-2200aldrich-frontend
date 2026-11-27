@@ -19,7 +19,7 @@ function App() {
 
   const copyright = (
     <footer className="copyright-footer">
-      &copy; Copyright {new Date().getFullYear()} 2200aldrich.com
+      &copy; Copyright {new Date().getFullYear()} Prolegoma.com
     </footer>
   );
 
