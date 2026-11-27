@@ -9,7 +9,7 @@ const AboutDialog = ({ showAbout, onClose }) => {
           <h3>2200 Aldrich Avenue South</h3>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
+      <Modal.Body className="reading-text">
         <p>
           Our camera captures the West 22nd Street and South Aldrich Avenue
           intersection in Minneapolis, Minnesota. The camera is active from

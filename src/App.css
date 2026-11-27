@@ -55,6 +55,10 @@ h3 {
   font-size: 1em;
 }
 
+.reading-text {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* Phones: tighter spacing and a smaller title */
 @media (max-width: 575.98px) {
   /* Scoped with .app-main so these win over Bootstrap's heading styles,

@@ -131,24 +131,34 @@ const RequestOffcanvas = ({ showRequest, onClose }) => {
         <Offcanvas.Title>Request video</Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
-        <p>
+        <p className="reading-text">
           Request a {CLIP_MINUTES}-minute clip of camera footage. The clip must
           be from within the previous {WINDOW_HOURS} hours.
         </p>
 
         {error && (
-          <Alert variant="danger" onClose={() => setError(null)} dismissible>
+          <Alert
+            variant="danger"
+            className="reading-text"
+            onClose={() => setError(null)}
+            dismissible
+          >
             {error}
           </Alert>
         )}
         {success && (
-          <Alert variant="success" onClose={() => setSuccess(null)} dismissible>
+          <Alert
+            variant="success"
+            className="reading-text"
+            onClose={() => setSuccess(null)}
+            dismissible
+          >
             {success}
           </Alert>
         )}
 
         <Form noValidate onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="clipRequestEmail">
+          <Form.Group className="mb-3 reading-text" controlId="clipRequestEmail">
             <Form.Label>Email</Form.Label>
             <Form.Control
               type="email"
@@ -161,7 +171,7 @@ const RequestOffcanvas = ({ showRequest, onClose }) => {
             />
           </Form.Group>
 
-          <Form.Group className="mb-3" controlId="clipRequestStartTime">
+          <Form.Group className="mb-3 reading-text" controlId="clipRequestStartTime">
             <Form.Label>Start date and time</Form.Label>
             <Form.Control
               type="datetime-local"
