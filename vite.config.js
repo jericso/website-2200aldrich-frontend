@@ -33,4 +33,13 @@ const cspPlugin = {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), cspPlugin],
+  server: {
+    // Forward API calls to website-prolegoma-backend during development.
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3003',
+        changeOrigin: true,
+      },
+    },
+  },
 })

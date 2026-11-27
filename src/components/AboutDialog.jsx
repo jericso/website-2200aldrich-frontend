@@ -13,11 +13,11 @@ const AboutDialog = ({ showAbout, onClose }) => {
         <p>
           Our camera captures the West 22nd Street and South Aldrich Avenue
           intersection in Minneapolis, Minnesota. The camera is active from
-          morning until night, 7 days a week. Camera footage is stored for 14
-          days to cloud storage.
+          morning until night, 7 days a week. Camera footage is stored for 24
+          hours.
         </p>
         <p>
-          If you would like video from the last 14 days, please submit a request
+          If you would like video from the last 24 hours, please submit a request
           by clicking the <i>Request video</i> button.
         </p>
       </Modal.Body>
